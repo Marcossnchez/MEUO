@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MEÜØ - Photography &amp; Digitalization</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#949C66", // Derived from the uploaded logo image
+              secondary: "#7A8250",
+              "background-light": "#F5F5F7", // Apple-style off-white
+              "background-dark": "#000000", // Apple-style pure black/dark gray
+              "surface-light": "#FFFFFF",
+              "surface-dark": "#1c1c1e",
+              "text-light": "#1d1d1f",
+              "text-dark": "#f5f5f7",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "12px",
+              'xl': "20px",
+              '2xl': "28px",
+            },
+            boxShadow: {
+                'apple': '0 4px 24px rgba(0,0,0,0.04)',
+                'glow': '0 0 20px rgba(148, 156, 102, 0.6)',
+            }
+          },
+        },
+      };
+    </script>
+<style>.glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .dark .glass-nav {
+            background: rgba(28, 28, 30, 0.7);
+        }
+        .fade-in-up {
+            animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-display transition-colors duration-500 antialiased selection:bg-primary selection:text-white">
+<nav class="fixed w-full z-50 top-0 border-b border-gray-200 dark:border-gray-800 glass-nav transition-colors duration-500">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<a class="text-2xl font-bold tracking-tight text-primary hover:opacity-80 transition-opacity" href="#">
+                MEÜØ
+            </a>
+<div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#portfolio">Portfolio</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="hidden lg:flex items-center space-x-3 text-xs font-semibold mr-2 border-r border-gray-300 dark:border-gray-700 pr-4">
+<button class="text-primary cursor-default">ES</button>
+<button class="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors">EN</button>
+<button class="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors">IT</button>
+<button class="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors">AR</button>
+</div>
+<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 transition-colors focus:outline-none" onclick="document.documentElement.classList.toggle('dark')">
+<span class="material-icons-round text-xl dark:hidden">dark_mode</span>
+<span class="material-icons-round text-xl hidden dark:block">light_mode</span>
+</button>
+<a class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-medium text-white transition-all bg-primary rounded-full hover:bg-secondary hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-background-dark" href="https://wa.me/1234567890">
+                    Contact Us
+                </a>
+</div>
+</div>
+</nav>
+<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+<h1 class="text-5xl md:text-7xl font-semibold tracking-tight leading-tight mb-6 fade-in-up">
+                Capturing Moments.<br/>
+<span class="text-primary">Digitizing Futures.</span>
+</h1>
+<p class="mt-4 text-xl md:text-2xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto font-light fade-in-up delay-100">
+                A creative duo blending modern photography, strategic marketing, and digital innovation to elevate your brand.
+            </p>
+<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-200">
+<a class="group inline-flex items-center justify-center px-8 py-3.5 text-base font-semibold text-white bg-primary rounded-full hover:bg-secondary transition-all hover:scale-105 shadow-lg shadow-primary/30" href="https://wa.me/1234567890">
+<span class="material-icons-round mr-2">chat</span>
+                    Chat on WhatsApp
+                </a>
+<a class="inline-flex items-center justify-center px-8 py-3.5 text-base font-medium text-gray-900 dark:text-white bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-all hover:border-gray-300 dark:hover:border-gray-600" href="#services">
+                    Explore Services
+                </a>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+</section>
+<section class="pb-24 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-96 md:h-[500px]">
+<div class="relative overflow-hidden rounded-2xl md:col-span-2 group">
+<img alt="Camera lens close up photography" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJTA9e7YIftf_9wNhH0nKP8v2__yZ0NppT2I0um1S7uOQiSbQcDoQHPkRI58qLAK0zBmSqXz0oUPssMbJ8L8rImkXaN84MFrmMf_roCxIXQxqOkXNF9Kf7mNiASqyD4Y_VujBCCa7uEZ6w18FPmuAkVsreIxNEiNer-l8qR6kbSePhGcHysK6BdL6reV4GTdYUb8Y3DiD1VsuFYK5XzBh8NrBz6mgO8B5u8oaRPz1aEWc-Cl2ADHO8hU0SRVfXJIqSaRpUvtMj0Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<span class="text-white font-medium text-lg">Professional Photography</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-2xl group">
+<img alt="Digital marketing analytics" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0lGBYx-9GHMNqG6iArVfOIFm-7G-g3RKz-XV5-_lftlsULnqZ7MC18_PTIYEbwZcVgforL7yMv9PnEAIiYBBA_w4IH_MtLgOdAKge9LI1UIjZgXReSUBnoTvPG2vnOcKiX0EEETxCjSGYiH5bPgXzIHVUQICJ9t_RTfw1RTT3yG-xD4mN3EsF4UbFhRS8FWL2ZtfiYzVnhVUxRhw5FZOoxgKyRxgITRHJZbGR10ZEuHhCZSYdXmbcRNRiD3Kk5K_eHbAamwvIGw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+<span class="text-white font-medium text-lg">Digital Strategy</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark transition-colors duration-500" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-primary font-semibold tracking-wider uppercase text-sm">Our Expertise</span>
+<h2 class="mt-2 text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white tracking-tight">Designed for impact.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-apple border border-transparent hover:border-gray-100 dark:hover:border-gray-700">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">camera_alt</span>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Photography</h3>
+<p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                        High-end editorial, product, and event photography. We tell stories through a lens, focusing on composition and light to capture the perfect moment.
+                    </p>
+</div>
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-apple border border-transparent hover:border-gray-100 dark:hover:border-gray-700">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">insights</span>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Marketing</h3>
+<p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                        Data-driven marketing strategies tailored to your audience. We help brands grow through social media management, content creation, and campaigns.
+                    </p>
+</div>
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-background-dark hover:bg-white dark:hover:bg-gray-800 transition-all duration-300 hover:shadow-apple border border-transparent hover:border-gray-100 dark:hover:border-gray-700">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons-round text-2xl">devices</span>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-3">Digitalization</h3>
+<p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                        Transforming traditional businesses into digital powerhouses. Website design, process automation, and digital presence optimization.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-background-light dark:bg-background-dark transition-colors duration-500" id="about">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/2">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/20 rounded-full blur-2xl opacity-50"></div>
+<img alt="Team working together" class="relative rounded-2xl shadow-2xl dark:shadow-none grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzOoQXfh-ySk370A-AafFIxkIh1R17XjG-4pUrfryQ2g0vr5QLeL-n2Lm7p4UZnuUSxyotPYVcaX_O5PWhe2ucT6IXynhB3HJisVvIm2F1A8oej8V3MoILJyZWK_Lpxs0HhVjdzfThvd-qh50scrYUtn3A5-ILFNjiwkOoFOMznALJU8bg6jL22Rrsi2prQH3QwNBp6ZpGFjTqxQAfyaFhMklc_tD5V0ge0CCub7Ryu5xdiIrVJnoFgkSlxO2Euy-BEjJBhhrzXw"/>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl md:text-4xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
+                    Driven by passion.<br/>
+<span class="text-gray-400 dark:text-gray-600">Defined by creativity.</span>
+</h2>
+<div class="space-y-6 text-lg text-gray-600 dark:text-gray-400 font-light">
+<p>
+                        We are <strong class="text-primary font-medium">MEÜØ</strong>, two young entrepreneurs with a shared vision: to bridge the gap between art and business.
+                    </p>
+<p>
+                        In a world that moves fast, we help you pause to capture the beauty of your brand, and then accelerate forward with cutting-edge digital strategies. Whether it's a shutter click or a click-through rate, we treat every detail with obsession.
+                    </p>
+</div>
+<div class="mt-8">
+<a class="text-primary font-medium hover:text-secondary inline-flex items-center group" href="#contact">
+                        Learn more about us
+                        <span class="material-icons-round ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark relative overflow-hidden" id="contact">
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<h2 class="text-4xl md:text-5xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">Ready to elevate your vision?</h2>
+<p class="text-xl text-gray-500 dark:text-gray-400 mb-10 font-light">
+                Let's discuss how we can bring your ideas to life through photography and digital innovation. We're just one message away.
+            </p>
+<a class="inline-flex items-center justify-center px-10 py-4 text-lg font-bold text-white bg-gradient-to-r from-primary to-secondary rounded-full hover:scale-105 transition-all shadow-glow ring-4 ring-primary/20 hover:ring-primary/40" href="https://wa.me/1234567890">
+<span class="material-icons-round mr-2 text-2xl">whatsapp</span>
+                Start a Conversation
+            </a>
+</div>
+</section>
+<footer class="bg-background-light dark:bg-black py-12 border-t border-gray-200 dark:border-gray-800 transition-colors duration-500">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-center md:text-left">
+<a class="text-2xl font-bold text-primary tracking-tight" href="#">MEÜØ</a>
+<p class="text-sm text-gray-500 dark:text-gray-500 mt-2">© 2023 MEÜØ. All rights reserved.</p>
+</div>
+<div class="flex space-x-6">
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+
+</body></html>
+<script>
+      // Translation system
+      const translations = {
+        es: {
+          nav: {
+            services: "Servicios",
+            about: "Nosotros",
+            portfolio: "Portfolio",
+            contact: "Contáctanos"
+          },
+          hero: {
+            title1: "Capturando Momentos.",
+            title2: "Digitalizando Futuros.",
+            subtitle: "Un dúo creativo que combina fotografía moderna, marketing estratégico e innovación digital para elevar tu marca.",
+            cta1: "Chatea en WhatsApp",
+            cta2: "Explorar Servicios"
+          },
+          gallery: {
+            photo: "Fotografía Profesional",
+            digital: "Estrategia Digital"
+          },
+          services: {
+            label: "Nuestra Experiencia",
+            title: "Diseñado para impactar.",
+            photography: {
+              title: "Fotografía",
+              desc: "Fotografía editorial, de producto y de eventos de alta gama. Contamos historias a través de un lente, enfocándonos en la composición y la luz para capturar el momento perfecto."
+            },
+            marketing: {
+              title: "Marketing",
+              desc: "Estrategias de marketing basadas en datos y adaptadas a tu audiencia. Ayudamos a las marcas a crecer mediante la gestión de redes sociales, creación de contenido y campañas."
+            },
+            digitalization: {
+              title: "Digitalización",
+              desc: "Transformando negocios tradicionales en potencias digitales. Diseño web, automatización de procesos y optimización de presencia digital."
+            }
+          },
+          about: {
+            title1: "Impulsados por la pasión.",
+            title2: "Definidos por la creatividad.",
+            p1: "Somos <strong class=\"text-primary font-medium\">MEÜØ</strong>, dos jóvenes emprendedores con una visión compartida: cerrar la brecha entre el arte y los negocios.",
+            p2: "En un mundo que se mueve rápido, te ayudamos a pausar para capturar la belleza de tu marca, y luego acelerar hacia adelante con estrategias digitales de vanguardia. Ya sea un clic del obturador o una tasa de clics, tratamos cada detalle con obsesión.",
+            cta: "Conoce más sobre nosotros"
+          },
+          contact: {
+            title: "¿Listo para elevar tu visión?",
+            subtitle: "Hablemos sobre cómo podemos dar vida a tus ideas a través de la fotografía y la innovación digital. Estamos a solo un mensaje de distancia.",
+            cta: "Iniciar una Conversación"
+          },
+          footer: {
+            rights: "© 2023 MEÜØ. Todos los derechos reservados."
+          }
+        },
+        en: {
+          nav: {
+            services: "Services",
+            about: "About",
+            portfolio: "Portfolio",
+            contact: "Contact Us"
+          },
+          hero: {
+            title1: "Capturing Moments.",
+            title2: "Digitizing Futures.",
+            subtitle: "A creative duo blending modern photography, strategic marketing, and digital innovation to elevate your brand.",
+            cta1: "Chat on WhatsApp",
+            cta2: "Explore Services"
+          },
+          gallery: {
+            photo: "Professional Photography",
+            digital: "Digital Strategy"
+          },
+          services: {
+            label: "Our Expertise",
+            title: "Designed for impact.",
+            photography: {
+              title: "Photography",
+              desc: "High-end editorial, product, and event photography. We tell stories through a lens, focusing on composition and light to capture the perfect moment."
+            },
+            marketing: {
+              title: "Marketing",
+              desc: "Data-driven marketing strategies tailored to your audience. We help brands grow through social media management, content creation, and campaigns."
+            },
+            digitalization: {
+              title: "Digitalization",
+              desc: "Transforming traditional businesses into digital powerhouses. Website design, process automation, and digital presence optimization."
+            }
+          },
+          about: {
+            title1: "Driven by passion.",
+            title2: "Defined by creativity.",
+            p1: "We are <strong class=\"text-primary font-medium\">MEÜØ</strong>, two young entrepreneurs with a shared vision: to bridge the gap between art and business.",
+            p2: "In a world that moves fast, we help you pause to capture the beauty of your brand, and then accelerate forward with cutting-edge digital strategies. Whether it's a shutter click or a click-through rate, we treat every detail with obsession.",
+            cta: "Learn more about us"
+          },
+          contact: {
+            title: "Ready to elevate your vision?",
+            subtitle: "Let's discuss how we can bring your ideas to life through photography and digital innovation. We're just one message away.",
+            cta: "Start a Conversation"
+          },
+          footer: {
+            rights: "© 2023 MEÜØ. All rights reserved."
+          }
+        },
+        it: {
+          nav: {
+            services: "Servizi",
+            about: "Chi Siamo",
+            portfolio: "Portfolio",
+            contact: "Contattaci"
+          },
+          hero: {
+            title1: "Catturare Momenti.",
+            title2: "Digitalizzare Futuri.",
+            subtitle: "Un duo creativo che unisce fotografia moderna, marketing strategico e innovazione digitale per elevare il tuo brand.",
+            cta1: "Chatta su WhatsApp",
+            cta2: "Esplora i Servizi"
+          },
+          gallery: {
+            photo: "Fotografia Professionale",
+            digital: "Strategia Digitale"
+          },
+          services: {
+            label: "La Nostra Esperienza",
+            title: "Progettato per l'impatto.",
+            photography: {
+              title: "Fotografia",
+              desc: "Fotografia editoriale, di prodotto e di eventi di alta gamma. Raccontiamo storie attraverso un obiettivo, concentrandoci sulla composizione e sulla luce per catturare il momento perfetto."
+            },
+            marketing: {
+              title: "Marketing",
+              desc: "Strategie di marketing basate sui dati e personalizzate per il tuo pubblico. Aiutiamo i brand a crescere attraverso la gestione dei social media, la creazione di contenuti e campagne."
+            },
+            digitalization: {
+              title: "Digitalizzazione",
+              desc: "Trasformare le imprese tradizionali in potenze digitali. Web design, automazione dei processi e ottimizzazione della presenza digitale."
+            }
+          },
+          about: {
+            title1: "Guidati dalla passione.",
+            title2: "Definiti dalla creatività.",
+            p1: "Siamo <strong class=\"text-primary font-medium\">MEÜØ</strong>, due giovani imprenditori con una visione condivisa: colmare il divario tra arte e business.",
+            p2: "In un mondo che si muove velocemente, ti aiutiamo a fermarti per catturare la bellezza del tuo brand, e poi accelerare in avanti con strategie digitali all'avanguardia. Che si tratti di un clic dell'otturatore o di un tasso di clic, trattiamo ogni dettaglio con ossessione.",
+            cta: "Scopri di più su di noi"
+          },
+          contact: {
+            title: "Pronto a elevare la tua visione?",
+            subtitle: "Discutiamo di come possiamo dare vita alle tue idee attraverso la fotografia e l'innovazione digitale. Siamo a solo un messaggio di distanza.",
+            cta: "Inizia una Conversazione"
+          },
+          footer: {
+            rights: "© 2023 MEÜØ. Tutti i diritti riservati."
+          }
+        },
+        ar: {
+          nav: {
+            services: "الخدمات",
+            about: "معلومات عنا",
+            portfolio: "معرض الأعمال",
+            contact: "اتصل بنا"
+          },
+          hero: {
+            title1: "التقاط اللحظات.",
+            title2: "رقمنة المستقبل.",
+            subtitle: "ثنائي إبداعي يمزج بين التصوير الفوتوغرافي الحديث والتسويق الاستراتيجي والابتكار الرقمي لرفع مستوى علامتك التجارية.",
+            cta1: "الدردشة على واتساب",
+            cta2: "استكشف الخدمات"
+          },
+          gallery: {
+            photo: "التصوير الاحترافي",
+            digital: "الاستراتيجية الرقمية"
+          },
+          services: {
+            label: "خبرتنا",
+            title: "مصمم للتأثير.",
+            photography: {
+              title: "التصوير الفوتوغرافي",
+              desc: "تصوير فوتوغرافي راقي للمقالات والمنتجات والفعاليات. نحن نروي القصص من خلال العدسة، مع التركيز على التكوين والضوء لالتقاط اللحظة المثالية."
+            },
+            marketing: {
+              title: "التسويق",
+              desc: "استراتيجيات تسويقية مدفوعة بالبيانات ومصممة خصيصاً لجمهورك. نحن نساعد العلامات التجارية على النمو من خلال إدارة وسائل التواصل الاجتماعي وإنشاء المحتوى والحملات."
+            },
+            digitalization: {
+              title: "الرقمنة",
+              desc: "تحويل الشركات التقليدية إلى قوى رقمية. تصميم المواقع الإلكترونية، أتمتة العمليات، وتحسين الحضور الرقمي."
+            }
+          },
+          about: {
+            title1: "مدفوعون بالشغف.",
+            title2: "محددون بالإبداع.",
+            p1: "نحن <strong class=\"text-primary font-medium\">MEÜØ</strong>، رائدا أعمال شابان لديهما رؤية مشتركة: سد الفجوة بين الفن والأعمال.",
+            p2: "في عالم يتحرك بسرعة، نساعدك على التوقف لالتقاط جمال علامتك التجارية، ثم التسارع إلى الأمام باستراتيجيات رقمية متطورة. سواء كان ذلك نقرة غالق أو معدل نقر، فإننا نعامل كل التفاصيل بهوس.",
+            cta: "اعرف المزيد عنا"
+          },
+          contact: {
+            title: "هل أنت مستعد لرفع مستوى رؤيتك؟",
+            subtitle: "دعنا نناقش كيف يمكننا إحياء أفكارك من خلال التصوير الفوتوغرافي والابتكار الرقمي. نحن على بعد رسالة واحدة فقط.",
+            cta: "ابدأ محادثة"
+          },
+          footer: {
+            rights: "© 2023 MEÜØ. جميع الحقوق محفوظة."
+          }
+        }
+      };
+
+      let currentLang = 'es';
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        const t = translations[lang];
+        
+        // Update nav
+        document.querySelector('[href="#services"]').textContent = t.nav.services;
+        document.querySelector('[href="#about"]').textContent = t.nav.about;
+        document.querySelector('[href="#portfolio"]').textContent = t.nav.portfolio;
+        document.querySelectorAll('a[href*="wa.me"]')[0].textContent = t.nav.contact;
+        
+        // Update hero
+        document.querySelector('h1').innerHTML = `${t.hero.title1}<br/><span class="text-primary">${t.hero.title2}</span>`;
+        document.querySelector('h1 + p').textContent = t.hero.subtitle;
+        document.querySelector('h1').parentElement.querySelectorAll('a')[0].innerHTML = `<span class="material-icons-round mr-2">chat</span>${t.hero.cta1}`;
+        document.querySelector('h1').parentElement.querySelectorAll('a')[1].textContent = t.hero.cta2;
+        
+        // Update gallery
+        const galleryTexts = document.querySelectorAll('.text-white.font-medium.text-lg');
+        galleryTexts[0].textContent = t.gallery.photo;
+        galleryTexts[1].textContent = t.gallery.digital;
+        
+        // Update services
+        document.querySelector('#services .text-primary.font-semibold').textContent = t.services.label;
+        document.querySelector('#services h2').textContent = t.services.title;
+        const serviceCards = document.querySelectorAll('#services .group');
+        serviceCards[0].querySelector('h3').textContent = t.services.photography.title;
+        serviceCards[0].querySelector('p').textContent = t.services.photography.desc;
+        serviceCards[1].querySelector('h3').textContent = t.services.marketing.title;
+        serviceCards[1].querySelector('p').textContent = t.services.marketing.desc;
+        serviceCards[2].querySelector('h3').textContent = t.services.digitalization.title;
+        serviceCards[2].querySelector('p').textContent = t.services.digitalization.desc;
+        
+        // Update about
+        document.querySelector('#about h2').innerHTML = `${t.about.title1}<br/><span class="text-gray-400 dark:text-gray-600">${t.about.title2}</span>`;
+        const aboutParagraphs = document.querySelectorAll('#about .space-y-6 p');
+        aboutParagraphs[0].innerHTML = t.about.p1;
+        aboutParagraphs[1].textContent = t.about.p2;
+        document.querySelector('#about a[href="#contact"]').innerHTML = `${t.about.cta}<span class="material-icons-round ml-1 group-hover:translate-x-1 transition-transform">arrow_forward</span>`;
+        
+        // Update contact
+        document.querySelector('#contact h2').textContent = t.contact.title;
+        document.querySelector('#contact h2 + p').textContent = t.contact.subtitle;
+        document.querySelector('#contact a').innerHTML = `<span class="material-icons-round mr-2 text-2xl">whatsapp</span>${t.contact.cta}`;
+        
+        // Update footer
+        document.querySelector('footer p').textContent = t.footer.rights;
+        
+        // Update language buttons
+        document.querySelectorAll('.hidden.lg\\:flex button').forEach((btn, idx) => {
+          const langs = ['es', 'en', 'it', 'ar'];
+          if (langs[idx] === lang) {
+            btn.classList.remove('text-gray-400', 'hover:text-gray-800', 'dark:hover:text-white');
+            btn.classList.add('text-primary', 'cursor-default');
+          } else {
+            btn.classList.remove('text-primary', 'cursor-default');
+            btn.classList.add('text-gray-400', 'hover:text-gray-800', 'dark:hover:text-white');
+          }
+        });
+
+        // Handle RTL for Arabic
+        if (lang === 'ar') {
+          document.documentElement.setAttribute('dir', 'rtl');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          document.documentElement.setAttribute('dir', 'ltr');
+          document.documentElement.setAttribute('lang', lang);
+        }
+      }
+
+      // Initialize language buttons
+      window.addEventListener('DOMContentLoaded', () => {
+        const langButtons = document.querySelectorAll('.hidden.lg\\:flex button');
+        const langs = ['es', 'en', 'it', 'ar'];
+        
+        langButtons.forEach((btn, idx) => {
+          btn.addEventListener('click', () => {
+            setLanguage(langs[idx]);
+          });
+        });
+      });
+    </script>
